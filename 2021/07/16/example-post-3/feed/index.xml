@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comentarios en: console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;)	</title>
+	<atom:link href="/2021/07/16/example-post-3/feed/" rel="self" type="application/rss+xml" />
+	<link>/2021/07/16/example-post-3/</link>
+	<description>Un blog para hablar de codigo, tecnologia y lo que pinte</description>
+	<lastBuildDate>Tue, 20 Jul 2021 00:18:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+</channel>
+</rss>

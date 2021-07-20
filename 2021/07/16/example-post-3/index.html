@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+						 
+		<title>console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;) &#8211;  💻Coding Tavern 🍺 </title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title=" 💻Coding Tavern 🍺  &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title=" 💻Coding Tavern 🍺  &raquo; RSS de los comentarios" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title=" 💻Coding Tavern 🍺  &raquo; console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;) RSS de los comentarios" href="/2021/07/16/example-post-3/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-layout-grid-css" href="/wp-content/plugins/layout-grid/style.css?ver=1626479416" type="text/css" media="all">
+<link rel="stylesheet" id="mkaz-code-syntax-prism-css-css" href="/wp-content/plugins/code-syntax-block/assets/prism-a11y-dark.css?ver=1626740094" type="text/css" media="all">
+<link rel="stylesheet" id="baskerville_googleFonts-css" href="//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700%7CRoboto%3A400%2C400italic%2C700%2C700italic%2C300%7CPacifico%3A400&#038;ver=2.1.4" type="text/css" media="all">
+<link rel="stylesheet" id="baskerville_style-css" href="/wp-content/themes/baskerville/style.css?ver=2.1.4" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" src="/wp-content/themes/baskerville/js/jquery.flexslider-min.js?ver=2.7.2" id="baskerville_flexslider-js"></script>
+<script type="text/javascript" src="/wp-content/themes/baskerville/js/global.js?ver=2.1.4" id="baskerville_global-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/13">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2021/07/16/example-post-3/">
+<link rel="shortlink" href="/?p=13">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2021%2F07%2F16%2Fexample-post-3%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2021%2F07%2F16%2Fexample-post-3%2F&#038;format=xml">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="custom-background-css">body.custom-background { background-color: #372110; }</style>
+			<style type="text/css" id="wp-custom-css">.single-post .type-post .wp-post-image {
+    margin: 0 auto 0.5em;
+    display: flex;
+}</style>
+			
+	</head>
+	
+	<body class="post-template-default single single-post postid-13 single-format-standard custom-background has-featured-image single single-post">
+
+		
+		<a class="skip-link button" href="#site-content">Skip to the content</a>
+	
+		<div class="header section small-padding bg-dark bg-image" style="background-image: url( /wp-content/themes/baskerville/images/header.jpg);">
+		
+			<div class="cover"></div>
+			
+			<div class="header-search-block bg-graphite hidden">
+				<form role="search" method="get" class="searchform" action="/">
+	<label for="search-form-60f6179c70eeb">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="search-form-60f6179c70eeb" class="search-field" placeholder="Search form" value="" name="s">
+	</label>
+	<input type="submit" class="searchsubmit" value="Search">
+</form>
+			</div>
+<!-- .header-search-block -->
+					
+			<div class="header-inner section-inner">
+			
+				
+					<div class="blog-title">
+						<a href="/" rel="home"> 💻Coding Tavern 🍺 </a>
+					</div>
+				
+											<h3 class="blog-description">Un blog para hablar de codigo, tecnologia y lo que pinte</h3>
+									
+											
+			</div>
+<!-- .header-inner -->
+						
+		</div>
+<!-- .header -->
+		
+		<div class="navigation section no-padding bg-dark">
+		
+			<div class="navigation-inner section-inner">
+			
+				<button class="nav-toggle toggle fleft hidden">
+					
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					
+				</button>
+						
+				<ul class="main-menu">
+				
+					<li class="page_item page-item-12"><a href="/about/">Acerca de mi</a></li>
+<li class="page_item page-item-11"><a href="/contact/">Contacto</a></li>
+											
+				</ul>
+<!-- .main-menu -->
+				 
+				<button class="search-toggle toggle fright">
+					<span class="screen-reader-text">Toggle search field</span>
+				</button>
+				 
+				<div class="clear"></div>
+				 
+			</div>
+<!-- .navigation-inner -->
+			
+		</div>
+<!-- .navigation -->
+		
+		<div class="mobile-navigation section bg-graphite no-padding hidden">
+					
+			<ul class="mobile-menu">
+			
+				<li class="page_item page-item-12"><a href="/about/">Acerca de mi</a></li>
+<li class="page_item page-item-11"><a href="/contact/">Contacto</a></li>
+										
+			 </ul>
+<!-- .main-menu -->
+		
+		</div>
+<!-- .mobile-navigation -->
+<div class="wrapper section medium-padding" id="site-content">
+										
+	<div class="section-inner">
+	
+		<div class="content fleft">
+												        
+									
+				<div id="post-13" class="post-13 post type-post status-publish format-standard has-post-thumbnail hentry category-sin-categoria tag-cadenas tag-lenguajes tag-reverse">
+
+									
+					<div class="post-header">
+
+												
+						    <h1 class="post-title"><a href="/2021/07/16/example-post-3/" rel="bookmark">console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;)</a></h1>
+
+											    
+					</div>
+<!-- .post-header -->
+					
+										
+						<div class="featured-media">
+						
+							<img width="480" height="360" src="/wp-content/uploads/2021/07/holamundo.jpg" class="attachment-post-image size-post-image wp-post-image" alt="" loading="lazy">									
+						</div>
+<!-- .featured-media -->
+					
+																			                                    	    
+					<div class="post-content">
+						
+						
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><em>Asi es como empieza este blog, de manera rebuscada como varias cosas de la programacion.</em>&#8230;</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p>Y como dice el titulo, &#8220;Hola mundo&#8221;, frase tan quemada por los tutoriales en internet y canales de youtube.</p>
+
+
+
+<p></p>
+
+
+
+<p>Y de lo que tambien estamos quemados es de uno de los tipicos problemas en la programacion que ya deberian estar resueltos, es impresionante que hoy en dia los lenguajes no tengan incorporadas herramientas para resolver los problemas mas basicos, en varios lenguajes <strong>dar vuelta una cadena</strong> es un parto.</p>
+
+
+
+<p></p>
+
+
+
+<p>Empecemos con la tipica implementacion, que aprendimos en la escuela (en java):</p>
+
+
+
+<pre class="wp-block-code"><code lang="java" class="language-java">class ReverseString {
+    public static void main(String[] args)
+    {
+        String input = "GeeksforGeeks";
+ 
+        // getBytes() method to convert string
+        // into bytes[].
+        byte[] strAsByteArray = input.getBytes();
+ 
+        byte[] result = new byte[strAsByteArray.length];
+ 
+        // Store result in reverse order into the
+        // result byte[]
+        for (int i = 0; i &lt; strAsByteArray.length; i++)
+            result[i] = strAsByteArray[strAsByteArray.length - i - 1];
+ 
+        System.out.println(new String(result));
+    }
+}</code></pre>
+
+
+
+<p>Una idea bastante sencilla, tomar la cadena como un array, crear un array nuevo con las posiciones invertidas, y volverlo a convertir en cadena.</p>
+
+
+
+<p>La idea termina siendo la misma en todos los lenguajes, usando diferentes implementaciones, en <strong>js </strong>como en el titulo:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript">function reverse(s){
+    return s.split("").reverse().join("");
+}</code></pre>
+
+
+
+<p>En <strong>c#:</strong></p>
+
+
+
+<pre class="wp-block-code"><code lang="csharp" class="language-csharp">public static string Reverse( string s )
+{
+    char[] charArray = s.ToCharArray();
+    Array.Reverse( charArray );
+    return new string( charArray );
+}</code></pre>
+
+
+
+<p>En <strong>python</strong>:</p>
+
+
+
+<pre class="wp-block-code"><code lang="python" class="language-python">&gt;&gt;&gt; 'hello world'[::-1]
+'dlrow olleh'
+</code></pre>
+
+
+
+<p>Algunas pueden ser mas elegantes que otras, pero coinciden en un mismo punto, no hay una<strong> implementacion nativa del lenguaje</strong>. Hoy en dia me parece ridiculo, y aunque entiendo que dar vuelta una cadena no es algo que se hace todos los dias en el trabajo, ¿no va siendo hora de que lo implementen? sale un nuevo ecmascript casi anualmente, python se actualiza relativamente seguido, ¿Por que es tan dificil agregar el metodo <strong>cadenita.reverse()</strong> ?</p>
+
+
+
+<p></p>
+
+
+
+<p>Leo opiniones</p>
+						
+						<div class="clear"></div>
+									        
+					</div>
+<!-- .post-content -->
+					            					
+					<div class="post-meta-container">
+						
+						<div class="post-author">
+						
+							<div class="post-author-content">
+							
+								<h4>gabrielspisso</h4>
+								
+																
+								<div class="author-links">
+									
+									<a class="author-link-posts" href="/author/gabrielspisso/">Author archive</a>
+									
+																		
+										<a class="author-link-website" href="/">Author website</a>
+										
+																		
+								</div>
+<!-- .author-links -->
+							
+							</div>
+<!-- .post-author-content -->
+						
+						</div>
+<!-- .post-author -->
+						
+						<div class="post-meta">
+						
+							<p class="post-date">16 julio, 2021</p>
+							
+														
+							<p class="post-categories"><a href="/category/sin-categoria/" rel="category tag">Sin categoría</a></p>
+							
+															<p class="post-tags"><a href="/tag/cadenas/" rel="tag">cadenas</a>, <a href="/tag/lenguajes/" rel="tag">lenguajes</a>, <a href="/tag/reverse/" rel="tag">reverse</a></p>
+														
+							<div class="clear"></div>
+							
+							<div class="post-nav">
+							
+																	
+								<div class="clear"></div>
+							
+							</div>
+<!-- .post-nav -->
+						
+						</div>
+<!-- .post-meta -->
+						
+						<div class="clear"></div>
+							
+					</div>
+<!-- .post-meta-container -->
+																		
+					
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Deja un comentario <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2021/07/16/example-post-3/#respond" style="display:none;">Cancelar respuesta</a></small>
+</h3>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> Los campos obligatorios están marcados con <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comentario</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Guardar mi nombre, correo electrónico y sitio web en este navegador para la próxima vez que haga un comentario.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar comentario"> <input type="hidden" name="comment_post_ID" value="13" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>	</div>
+<!-- #respond -->
+													                        
+						
+			</div>
+<!-- .post -->
+		
+		</div>
+<!-- .content -->
+		
+		
+	<div class="sidebar fright" role="complementary">
+	
+		<div class="widget widget_search">
+<div class="widget-content">
+<form role="search" method="get" class="searchform" action="/">
+	<label for="search-form-60f6179c75ee6">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="search-form-60f6179c75ee6" class="search-field" placeholder="Search form" value="" name="s">
+	</label>
+	<input type="submit" class="searchsubmit" value="Search">
+</form>
+</div>
+<div class="clear"></div>
+</div>
+		<div class="widget widget_recent_entries">
+<div class="widget-content">
+		<h3 class="widget-title">Entradas recientes</h3>
+		<ul>
+											<li>
+					<a href="/2021/07/16/example-post-3/" aria-current="page">console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;)</a>
+									</li>
+					</ul>
+
+		</div>
+<div class="clear"></div>
+</div>
+<div class="widget widget_recent_comments">
+<div class="widget-content">
+<h3 class="widget-title">Comentarios recientes</h3>
+<ul id="recentcomments"></ul>
+</div>
+<div class="clear"></div>
+</div>
+<div class="widget widget_archive">
+<div class="widget-content">
+<h3 class="widget-title">Archivos</h3>
+			<ul>
+					<li><a href="/2021/07/">julio 2021</a></li>
+			</ul>
+
+			</div>
+<div class="clear"></div>
+</div>
+<div class="widget widget_categories">
+<div class="widget-content">
+<h3 class="widget-title">Categorías</h3>
+			<ul>
+					<li class="cat-item cat-item-1">
+<a href="/category/sin-categoria/">Sin categoría</a>
+</li>
+			</ul>
+
+			</div>
+<div class="clear"></div>
+</div>
+<div class="widget widget_meta">
+<div class="widget-content">
+<h3 class="widget-title">Meta</h3>
+		<ul>
+						<li><a href="/wp-login.php">Iniciar sesión</a></li>
+			<li><a href="/feed/">Feed de entradas</a></li>
+			<li><a href="/comments/feed/">Feed de comentarios</a></li>
+
+			<li><a href="https://es.wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</div>
+<div class="clear"></div>
+</div>		
+	</div>
+<!-- .sidebar -->
+
+		
+		<div class="clear"></div>
+		
+	</div>
+<!-- .section-inner -->
+
+</div>
+<!-- .wrapper -->
+		
+
+<div class="credits section bg-dark small-padding">
+
+	<div class="credits-inner section-inner">
+
+		<p class="credits-left fleft">
+		
+			&copy; 2021 <a href="/"> 💻Coding Tavern 🍺 </a><span> &mdash; Powered by <a href="http://www.wordpress.org/">WordPress</a></span>
+		
+		</p>
+		
+		<p class="credits-right fright">
+			
+			<span>Theme by <a href="https://www.andersnoren.se/">Anders Noren</a> &mdash; </span><a class="tothetop" href="#">Up &uarr;</a>
+			
+		</p>
+		
+		<div class="clear"></div>
+	
+	</div>
+<!-- .credits-inner -->
+	
+</div>
+<!-- .credits -->
+
+<script type="text/javascript" id="mkaz-code-syntax-prism-js-js-extra">
+/* <![CDATA[ */
+var prism_settings = {"pluginUrl":"\/wp-content\/plugins\/code-syntax-block\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1626740094" id="mkaz-code-syntax-prism-js-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.7.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.7.2" id="wp-embed-js"></script>
+
+</body>
+</html>

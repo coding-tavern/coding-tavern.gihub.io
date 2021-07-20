@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reverse &#8211;  💻Coding Tavern 🍺 </title>
+	<atom:link href="/tag/reverse/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Un blog para hablar de codigo, tecnologia y lo que pinte</description>
+	<lastBuildDate>Tue, 20 Jul 2021 00:18:17 +0000</lastBuildDate>
+	<language>es-AR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;)</title>
+		<link>/2021/07/16/example-post-3/</link>
+					<comments>/2021/07/16/example-post-3/#respond</comments>
+		
+		<dc:creator><![CDATA[gabrielspisso]]></dc:creator>
+		<pubDate>Fri, 16 Jul 2021 19:47:02 +0000</pubDate>
+				<category><![CDATA[Sin categoría]]></category>
+		<category><![CDATA[cadenas]]></category>
+		<category><![CDATA[lenguajes]]></category>
+		<category><![CDATA[reverse]]></category>
+		<guid isPermaLink="false">https://codingtavern.wordpress.com/?p=10</guid>
+
+					<description><![CDATA[Asi es como empieza este blog, de manera rebuscada como varias cosas de la programacion.&#8230; Y como dice el titulo, &#8220;Hola mundo&#8221;, frase tan quemada por los tutoriales en internet y canales de youtube. Y de lo que tambien estamos... <a class="more-link" href="/2021/07/16/example-post-3/">Continue Reading &#8594;</a>]]></description>
+										<content:encoded><![CDATA[
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><em>Asi es como empieza este blog, de manera rebuscada como varias cosas de la programacion.</em>&#8230;</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p>Y como dice el titulo, &#8220;Hola mundo&#8221;, frase tan quemada por los tutoriales en internet y canales de youtube.</p>
+
+
+
+<p></p>
+
+
+
+<p>Y de lo que tambien estamos quemados es de uno de los tipicos problemas en la programacion que ya deberian estar resueltos, es impresionante que hoy en dia los lenguajes no tengan incorporadas herramientas para resolver los problemas mas basicos, en varios lenguajes <strong>dar vuelta una cadena</strong> es un parto.</p>
+
+
+
+<p></p>
+
+
+
+<p>Empecemos con la tipica implementacion, que aprendimos en la escuela (en java):</p>
+
+
+
+<pre class="wp-block-code"><code lang="java" class="language-java">class ReverseString {
+    public static void main(String[] args)
+    {
+        String input = "GeeksforGeeks";
+ 
+        // getBytes() method to convert string
+        // into bytes[].
+        byte[] strAsByteArray = input.getBytes();
+ 
+        byte[] result = new byte[strAsByteArray.length];
+ 
+        // Store result in reverse order into the
+        // result byte[]
+        for (int i = 0; i &lt; strAsByteArray.length; i++)
+            result[i] = strAsByteArray[strAsByteArray.length - i - 1];
+ 
+        System.out.println(new String(result));
+    }
+}</code></pre>
+
+
+
+<p>Una idea bastante sencilla, tomar la cadena como un array, crear un array nuevo con las posiciones invertidas, y volverlo a convertir en cadena.</p>
+
+
+
+<p>La idea termina siendo la misma en todos los lenguajes, usando diferentes implementaciones, en <strong>js </strong>como en el titulo:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript">function reverse(s){
+    return s.split("").reverse().join("");
+}</code></pre>
+
+
+
+<p>En <strong>c#:</strong></p>
+
+
+
+<pre class="wp-block-code"><code lang="csharp" class="language-csharp">public static string Reverse( string s )
+{
+    char[] charArray = s.ToCharArray();
+    Array.Reverse( charArray );
+    return new string( charArray );
+}</code></pre>
+
+
+
+<p>En <strong>python</strong>:</p>
+
+
+
+<pre class="wp-block-code"><code lang="python" class="language-python">&gt;&gt;&gt; 'hello world'[::-1]
+'dlrow olleh'
+</code></pre>
+
+
+
+<p>Algunas pueden ser mas elegantes que otras, pero coinciden en un mismo punto, no hay una<strong> implementacion nativa del lenguaje</strong>. Hoy en dia me parece ridiculo, y aunque entiendo que dar vuelta una cadena no es algo que se hace todos los dias en el trabajo, ¿no va siendo hora de que lo implementen? sale un nuevo ecmascript casi anualmente, python se actualiza relativamente seguido, ¿Por que es tan dificil agregar el metodo <strong>cadenita.reverse()</strong> ?</p>
+
+
+
+<p></p>
+
+
+
+<p>Leo opiniones</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2021/07/16/example-post-3/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
