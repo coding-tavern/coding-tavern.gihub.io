@@ -12,7 +12,7 @@
 	<atom:link href="/tag/cadenas/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Un blog para hablar de codigo, tecnologia y lo que pinte</description>
-	<lastBuildDate>Tue, 20 Jul 2021 00:18:17 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 20 Jul 2021 00:28:35 +0000</lastBuildDate>
 	<language>es-AR</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,12 +20,12 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.7.2</generator>
 	<item>
-		<title>console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;)</title>
+		<title>console.log(&#8220;odnum aloH&#8221; .split(&#8220;&#8221;).reverse().join(&#8220;&#8221;))</title>
 		<link>/2021/07/16/example-post-3/</link>
 					<comments>/2021/07/16/example-post-3/#respond</comments>
 		
 		<dc:creator><![CDATA[gabrielspisso]]></dc:creator>
-		<pubDate>Fri, 16 Jul 2021 19:47:02 +0000</pubDate>
+		<pubDate>Fri, 16 Jul 2021 22:47:02 +0000</pubDate>
 				<category><![CDATA[Sin categoría]]></category>
 		<category><![CDATA[cadenas]]></category>
 		<category><![CDATA[lenguajes]]></category>

@@ -7,11 +7,11 @@
 	>
 <channel>
 	<title>
-	Comentarios en: console.log(&#8220;odnum aloH&#8221;).split(&#8220;&#8221;) .reverse() .join(&#8220;&#8221;)	</title>
+	Comentarios en: console.log(&#8220;odnum aloH&#8221; .split(&#8220;&#8221;).reverse().join(&#8220;&#8221;))	</title>
 	<atom:link href="/2021/07/16/example-post-3/feed/" rel="self" type="application/rss+xml" />
 	<link>/2021/07/16/example-post-3/</link>
 	<description>Un blog para hablar de codigo, tecnologia y lo que pinte</description>
-	<lastBuildDate>Tue, 20 Jul 2021 00:18:17 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 20 Jul 2021 00:28:35 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
